@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="_css/style.css">
+    <title>CFOnline</title>
+</head>
+<body>
+    
+    <nav>
+        <img src="_imagens/cfo-logo.svg" alt="logomarca" class="logo">
+        <img src="_imagens/ham-menu.svg" alt="menu" class="hidden-menu" onclick="openNav()">
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Entrar</a></li>
+            <li><a href="#" class="btn-cadastro">Cadastro</a></li>
+        </ul>
+        <div id="mySidenav" class="sidenav">
+            <a href="#" class="closebtn" onclick="closeNav()">&times;</button>
+            <a href="#">Home</a>
+            <a href="#">Serviços</a>
+            <a href="#">Entrar</a>
+            <a href="#" class="btn-cadastro">Cadastro</a>
+        </div>
+    </nav>
+
+    <header class="cabecalho">
+        <figure>
+            <a href="https://br.freepik.com/fotos-vetores-gratis/logotipo" target="_blank">
+                <img src="_imagens/img-money.svg" alt="Imagem Freepik" title="Logotipo vetor criado por freepik - br.freepik.com">
+            </a>
+        </figure>
+    
+        <h1>Consultoria Financeira Online</h1>
+        <p>Serviços de consultoria online para gestão financeira e invetimentos</p>
+    </header>
+
+    <div class="servicos">
+        <dl>
+            <div>
+                <dt>Segurança financeira</dt>
+                <dd>Alcançe a sua segurança financeira e de seu negócio através dos nossos serviços.</dd>
+            </div>
+            <div>
+                <dt>Investimentos</dt>
+                <dd>Prestamos consultoria para investimentos em <strong>renda fixa</strong> e <strong>renda variável</strong>, para que você alcance a maior margem de lucro.</dd>
+            </div>
+            <div>
+                <dt>Gestão de recursos</dt>
+                <dd>Aprenda a <strong>controlar recursos financeiros</strong> de forma prática e sem complicações.</dd>
+            </div>
+        </dl>
+    </div>
+
+    <div class="testemunhos">
+        <div>
+            <div class="testemunho"><img src="_imagens/img-homem.jpg" alt="imagem de um cliente">
+            <blockquote cite="John Doe">"A #cfonline tem um serviço incrível! Recomendo bastante!! 👍👍"</blockquote>
+            <p>- Jonas</p></div>
+            <div class="testemunho"><img src="_imagens/img-mulher.jpg" alt="imagem de uma cliente">
+            <blockquote cite="Jane Doe">"Ótimo atendimento e cumprem o que prometem, Parabéns! #cfonline"</blockquote>
+            <p>- Cristina</p></div>
+        </div>
+    </div>
+
+    <div class="cta">
+        <h1>Cadastre-se Gratuitamente</h1>
+        <p>E tenha acesso a todos os nossos serviços online</p>
+        <button type="button">Cadastre-se</button>
+    </div>
+
+    <footer id="footer" class="rodape">
+        <ul class="requisitos">
+            <li><a href="#footer">Parceiros</a></li>
+            <li><a href="#footer">Institucional</a></li>
+            <li><a href="#footer">Políticas de privacidade</a></li>
+            <li><a href="#footer">Termos de uso</a></li>
+        </ul>
+        <img src="_imagens/cfo-logo-branca.svg" alt="logomarca" class="logo-branca">
+        <ul class="contato">    
+            <li><a href="#footer">Fale conosco</a></li>
+            <li><a href="#footer">Instagram</a></li>
+            <li><a href="#footer">Facebook</a></li>
+            <li><a href="#footer">Twitter</a></li>
+        </ul>
+    </footer>
+
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "100%";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+</body>
+</html>
